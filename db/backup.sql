@@ -1,0 +1,6 @@
+PRAGMA foreign_keys=OFF;
+BEGIN TRANSACTION;
+CREATE TABLE datos(id INTEGER PRIMARY KEY AUTOINCREMENT , infojson TEXT NOT NULL, horaregistro TEXT NOT NULL);
+INSERT INTO datos (infojson, horaregistro) VALUES('GPS:-16.56,-67.9878|ILUM:2.34|VOLT:56','2018-09-06 15:24:59');
+INSERT INTO datos (infojson, horaregistro) VALUES('UV:13|ENERG:3.4','2018-09-06 16:11:48');
+COMMIT;
